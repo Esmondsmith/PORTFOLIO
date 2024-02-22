@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="icon" href="images/eee.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles.css">
+    <link  href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#"><img src="images/e.png" alt="" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fas-menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas-menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span><span class="esmond">E</span>smond,</span><br>A Software Developer<br>From Nigeria </h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------ABOUT SESSION---------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me1.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello there! I'm Esmond Agharovbokhan, a passionate and detail-oriented web developer with a keen eye for creating dynamic and user-friendly websites. I thrive on turning ideas into digital realities and enjoy the challenge of crafting a unique and responsive website. I have been working for more than one year now as a software developer with experience and skills in several web technologies that help create powerful, user-friendly websites.
+                </p>
+                <br>
+                <p>
+                    I love diving into complex coding challenges in an attempt to proffer solutions. Whether it's troubleshooting a bug, optimizing website performance, or implementing new features, I approach every problem with a solution-oriented mindset. I enjoy working alongside other fellow developers, and stakeholders, which makes me thrive in collaborative environments. Clear communication and teamwork are at the core of my approach to ensure successful project outcomes.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('technologies')">Technologies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web Designs/Development</li>
+                        <li><span>App Development</span><br>App Building/Development</li>
+                        <li><span>Software Development Tutoring</span><br>Teaching Development/Designs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Present</span><br>Web Developer at SanerClimes Technologies</li>
+                        <li><span>2024 - Present</span><br>Web Development Tutor at SanerClimes Technologies</li>
+                        <li><span>2023 - 2024</span><br>Web Developer at Moat Academy & Technologies</li>
+                        <li><span>2022 - 2023</span><br>Internship at Atop Web Technologies</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Web Development Training <br>
+                            <a href="https://moatacademy.com/" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a> Moat Academy for Developers
+                        </li>
+                        <li><span>2021</span><br><abbr title="Master of Business Administration"><b>M.B.A</b></abbr><br>
+                            <a href="https://kyrenia.edu.tr/?lang=en" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a> University of Kyrenia
+                        </li>
+                        <li><span>2014</span><br><abbr title="Bachelor of Science"><b>BS.c</b></abbr> <br>
+                            <a href="https://www.delsu.edu.ng/" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a> Delta State University
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="technologies">
+                    <ul>
+                        <li style="display: flex;"><i class="fa-brands fa-html5 fa-2xl" style="color: #b71f45;"></i><span> - HTML5</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-css3 fa-2xl" style="color: #422697;"></i><span> - CSS</span></li>
+                        <br><br>
+                        <li style="display: flex;"><i class="fa-brands fa-bootstrap fa-2xl" style="color: #B197FC;"></i><span> - Bootstrap</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-square-js fa-2xl" style="color: #FFD43B;"></i><span> - Javascript</span></li>
+                        <br><br>
+                        <li style="display: flex;"><i class="fa-solid fa-database fa-2xl" style="color: #4c962c;"></i><span> - MySQL</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-php fa-2xl" style="color: #64106a;"></i><span> - PHP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------SERVICES SESSION---------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design & Development</h2>
+                <p>In the past, I have amassed a plethora of skills in various web technologies such as HTML5, CSS (Bootstrap and Tailwind), JavaScript, PHP, ReactJS, and many more. I believe that effective web development goes beyond just lines of code. It's about creating an immersive and engaging digital experience.</p>
+                <a href="#">Learn More &#10095;&#10095;</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>UI/UX Design</h2>
+                <p>In the past, I have amassed a plethora of skills in various web technologies such as HTML5, CSS (Bootstrap and Tailwind), JavaScript, PHP, ReactJS, and many more. I believe that effective web development goes beyond just lines of code. It's about creating an immersive and engaging digital experience.</p>
+                <a href="#">Learn More &#10095;&#10095;</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Web Development Tutoring</h2>
+                <p>In the past, I have amassed a plethora of skills in various web technologies such as HTML5, CSS (Bootstrap and Tailwind), JavaScript, PHP, ReactJS, and many more. I believe that effective web development goes beyond just lines of code. It's about creating an immersive and engaging digital experience.</p>
+                <a href="#">Learn More &#10095;&#10095;</a>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- ------------------PROJECT PORTFOLIO SESSION---------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title project">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/todo.png" alt="">
+                <div class="layer">
+                    <h3>To-Do Task App</h3>
+                    <p>To-do task app for tracking daily planned activities, and users can add a To-do, edit, and delete and even cancel out a task when its been completed.<span style="color:#78c51a"><b> Used:</b></span> ReactJS and Bootstrap</p>
+                    <a href="https://task-app-esmonds-projects-03c70f99.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/gas1.png" alt="">
+                <div class="layer">
+                    <h3>Gas Ordering App</h3>
+                    <p>A gas ordering system where sellers can register as a merchant and buyers can view sellers details and place order on the KG of gas they want.<span style="color:#78c51a"><b> Used:</b></span> HTML, CSS, Bootstrap, MySQL and PHP.</p>
+                    <a href="https://moatcohorts.com.ng/c25/gas/index.php" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/home6.jpg" alt="">
+                <div class="layer">
+                    <h3>E-commerce App</h3>
+                    <p>E-commerce website where the seller can showcase all its products ranging from men, women and kids, and buyers can view products, add to cart, and make an order.<span style="color:#78c51a"><b> Used:</b></span> Reactjs and CSS</p>
+                    <a href="#"><i class="fa-solid fa-link" target="_blank"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!-- ------------------CONTACT SESSION---------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:esmondagha@gmail.com">esmondagha@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone-volume"></i> 07035967785</p>
+                <div class="social-icons">
+                    <a href="" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="" target="_blank" title="X (Twitter)"><i class="fa-brands fa-twitter"></i></i></i></a>
+                    <a href="" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="images/esmond.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Name" required>
+                    <input type="email" name="Email" placeholder="Enter Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Enter Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-arrow-up to-top"></i></a>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023 - Esmond Portfolio. </p>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link')
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab')
+        }
+        //This line is the add the colored line under the text on click
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab')
+    }
+
+    //JS for open and close menu
+    //The logic is that; On click on the menu bar, the style property right will be set to "0" meaning it will be visible, and when its clicked again, the style property will be set to right: "-400px" based on the css property, and the sidebar will be hidden again
+    var sideMenu = document.getElementById('sidemenu');
+    function openmenu(){
+        sideMenu.style.right = "0";
+    }
+    function closemenu(){
+        sideMenu.style.right = "-400px";
+    }
+
+
+    //Form submission script
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTGQ-8eepzl8jqjByAR4pFRonb5zYCyPdAioZSqY_OxclLx4ewCI9YR9jEC_oDqUdy-Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+<!--    
+    
+    var sheetName = 'Sheet1'
+var scriptProp = PropertiesService.getScriptProperties()
+
+function intialSetup () {
+  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+  scriptProp.setProperty('key', activeSpreadsheet.getId())
+}
+
+function doPost (e) {
+  var lock = LockService.getScriptLock()
+  lock.tryLock(10000)
+
+  try {
+    var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+    var sheet = doc.getSheetByName(sheetName)
+
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+    var nextRow = sheet.getLastRow() + 1
+
+    var newRow = headers.map(function(header) {
+      return header === 'timestamp' ? new Date() : e.parameter[header]
+    })
+
+    sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  catch (e) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  finally {
+    lock.releaseLock()
+  }
+} -->
+
+
+</body>
+</html>
