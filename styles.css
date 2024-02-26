@@ -97,6 +97,47 @@ nav ul li a:hover::after{
 
 
 /* -----------------------ABOUT ME SESSION------------------------ */
+/* .motivation{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motivation .motivation-image{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.motivation .motivation-image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.motivation .motivation-text{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-180px, 50px);
+} */
+
+
+
+
+
+/* -----------------------ABOUT ME SESSION------------------------ */
 #about{
     padding: 90px 0;
     color: #ababab;
@@ -480,8 +521,8 @@ nav .fas-menu{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }    
-
 }
+  
 
 /* form validation */
 .contact-right span{
