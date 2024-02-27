@@ -543,3 +543,7 @@ nav .fas-menu{
     font-weight: 600;
     margin-top: 10px;
 }
+
+a span .double-arrow:hover{
+    rotate: 90deg;
+}
