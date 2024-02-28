@@ -219,7 +219,7 @@
         <a href="#"><i class="fa-solid fa-arrow-up to-top"></i></a>
     </div>
     <div class="copyright">
-        <p>Copyright &copy; 2023 - Esmond Portfolio. </p>
+        <p>Copyright &copy; <span id="copyrightYear"></span> - Esmond Portfolio. </p>
     </div>
 </div>
 
@@ -303,6 +303,10 @@
             } 
 
         }
+
+        //For dynamic Copyright year
+        let thisYear = new Date().getFullYear();
+        document.getElementById('copyrightYear').textContent = thisYear;
 
 
   </script>
