@@ -280,7 +280,7 @@
         delay: 400
     });
         ScrollReveal().reveal('.service, .project', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.about-col-1', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.about-col-1', { delay: 500, origin: 'bottom' });
         ScrollReveal().reveal('.esmond', { delay: 600, origin: 'top' });
         ScrollReveal().reveal('.social-icons i', { delay: 300, origin: 'bottom', interval: 200 });
 
@@ -289,13 +289,19 @@
         function changeText(){
             var downloadBtn = document.getElementById('download-btn');
             var downloadText = document.getElementById('download-text');
+            var completed = '<i class="fa-regular fa-circle-check"></i> Completed';
+            var download = '<i class="fa-solid fa-download"></i> Download CV'
 
-            var complete = downloadBtn.innerHTML = '<i class="fa-regular fa-circle-check"></i> Completed';
+            if(downloadBtn.innerHTML = download){
+                    
+                downloadBtn.innerHTML = completed;
 
-                setTimeout(function(){
-                    downloadText.textContent = 'Download CV'
-                    downloadBtn.innerHTML = '<i class="fa-solid fa-download"></i> Download CV'
-                }, 2000)
+                    setTimeout(()=>{
+                        downloadBtn.innerHTML = download;
+                    }, 1500)
+
+            } 
+
         }
 
 
