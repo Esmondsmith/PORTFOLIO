@@ -242,6 +242,7 @@
         document.getElementById(tabname).classList.add('active-tab')
     }
 
+
     //JS for open and close menu
     //The logic is that; On click on the menu bar, the style property right will be set to "0" meaning it will be visible, and when its clicked again, the style property will be set to right: "-400px" based on the css property, and the sidebar will be hidden again
     var sideMenu = document.getElementById('sidemenu');
@@ -271,7 +272,6 @@
     })
 
 
-
     //For scroll behaviour
     ScrollReveal({
         reset: true,
@@ -280,7 +280,7 @@
         delay: 400
     });
         ScrollReveal().reveal('.service, .project', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.about-col-1', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.about-col-1', { delay: 400, origin: 'bottom' });
         ScrollReveal().reveal('.esmond', { delay: 600, origin: 'top' });
         ScrollReveal().reveal('.social-icons i', { delay: 300, origin: 'bottom', interval: 200 });
 
@@ -303,6 +303,7 @@
             } 
 
         }
+
 
         //For dynamic Copyright year
         let thisYear = new Date().getFullYear();
