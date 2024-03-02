@@ -154,14 +154,14 @@
 <!-- ------------------PROJECT PORTFOLIO SECTION---------------------------- -->
 
 <div id="portfolio">
-    <div class="container">
+    <div class="container" id="projectsDiv">
         <h1 class="sub-title project">Projects</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/todo.png" alt="">
                 <div class="layer">
                     <h3>To-Do Task App</h3>
-                    <p>To-do task app for tracking daily planned activities, and users can add a To-do, edit, and delete and even cancel out a task when its been completed.<span style="color:#78c51a"><b> Technologies:</b></span> ReactJS and Bootstrap</p>
+                    <p>To-do task app for tracking daily planned activities, and users can add a To-do, edit, delete and even cancel out a task when it has been completed.<span style="color:#78c51a"><b> Technologies:</b></span> ReactJS and Bootstrap</p>
                     <a href="https://task-app-esmonds-projects-03c70f99.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                 <img src="images/gas1.png" alt="">
                 <div class="layer">
                     <h3>Gas Ordering App</h3>
-                    <p>A gas ordering system where sellers can register as a merchant and buyers can view sellers details and place order on the KG of gas they want.<span style="color:#78c51a"><b> Technologies:</b></span> HTML, CSS, Bootstrap, MySQL and PHP.</p>
+                    <p>A gas ordering system where sellers can register as a merchant and buyers can view seller's details and place orders on the KG of gas they want.<span style="color:#78c51a"><b> Technologies:</b></span> HTML, CSS, Bootstrap, MySQL and PHP.</p>
                     <a href="https://moatcohorts.com.ng/c25/gas/index.php" target="_blank"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
@@ -177,12 +177,39 @@
                 <img src="images/home6.jpg" alt="">
                 <div class="layer">
                     <h3>E-commerce App</h3>
-                    <p>E-commerce website where the seller can showcase all its products ranging from men, women and kids, and buyers can view products, add to cart, and make an order.<span style="color:#78c51a"><b> Technologies:</b></span> Reactjs and CSS</p>
+                    <p>E-commerce website where the seller can showcase all its products ranging from men, women, and kids, and buyers can view products, add to cart, and make an order.<span style="color:#78c51a"><b> Technologies:</b></span> Reactjs and CSS</p>
                     <a href="#"><i class="fa-solid fa-link" target="_blank"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <!-- Hidden Details -->
+        <div class="work-list">
+            <div class="work more-projects">
+                <img src="images/proj.jpg" alt="">
+                <div class="layer">
+                    <h3>Coming Soon</h3>
+                    <p>Soon this project will be added</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work more-projects">
+                <img src="images/proj.jpg" alt="">
+                <div class="layer">
+                    <h3>Coming Soon</h3>
+                    <p>Soon this project will be added</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work more-projects">
+                <img src="images/proj.jpg" alt="">
+                <div class="layer">
+                    <h3>Coming Soon</h3>
+                    <p>Soon this project will be added</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" class="btn" id="seeMoreBtn">See More</a>
     </div>
 </div>
 
@@ -224,9 +251,23 @@
 </div>
 
 
+<script src="jquery.js" type="text/javascript"></script> 
 <script src="https://unpkg.com/scrollreveal"></script> 
 <script type="text/javascript">
 
+    //Jquery to reveal more projects
+    $(document).ready(function(){
+        //First, we initially hide the excess projects
+        $(".more-projects").hide();
+        //Then we show the project on click of the button
+        $('#seeMoreBtn').on("click", function(){
+            $(".more-projects").slideToggle();
+        })
+        
+    })
+
+
+    //This is to 
     var tablinks = document.getElementsByClassName('tab-links');
     var tabcontents = document.getElementsByClassName('tab-contents');
 
@@ -293,15 +334,11 @@
             var download = '<i class="fa-solid fa-download"></i> Download CV'
 
             if(downloadBtn.innerHTML = download){
-                    
                 downloadBtn.innerHTML = completed;
-
-                    setTimeout(()=>{
-                        downloadBtn.innerHTML = download;
-                    }, 1500)
-
+                setTimeout(()=>{
+                    downloadBtn.innerHTML = download;
+                }, 1500)
             } 
-
         }
 
 
