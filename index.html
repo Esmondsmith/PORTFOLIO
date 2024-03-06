@@ -16,7 +16,6 @@
 </head>
 <body>
 
-
 <div id="header">
     <div class="container">
         <nav>
@@ -34,6 +33,7 @@
         <div class="header-text">
             <p>Software Developer.</p>
             <h1>Hi, I'm <span><span class="esmond">E</span>smond,</span><br>Software Developer<br>From Nigeria. </h1>
+            <button class="btn2 btnHire"><a href="#contactForm">Hire Me <i class="fa-solid fa-arrow-right"></i></a></button>
         </div>
     </div>
 </div>
@@ -227,16 +227,19 @@
                     <a href="https://web.facebook.com/esmond.smith2" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.linkedin.com/in/esmond-agharovbokhan-7766a2274/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://twitter.com/home" target="_blank" title="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://github.com/" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/Esmondsmith?tab=repositories" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="images/esmond.pdf" download class="btn btn2" id="download-btn" onclick="changeText()"><i class="fa-solid fa-download"></i> 
                 <span id="download-text">Download CV</span> 
                 </a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-google-sheet" style="position: relative;">
+                    <span id="allowedLetters" style="color: red; font-size: 18px;"></span>
                     <input type="text" name="Name" id="formName" placeholder="Enter Name" required>
+                    <i class="fa-solid fa-circle-check fa-lg formName"  id="okIconName"></i>
                     <input type="email" name="Email" id="formEmail" placeholder="Enter Email" required>
+                    <i class="fa-solid fa-circle-check fa-lg formEmail"  id="okIconEmail"></i>
                     <textarea name="Message" id="formMessage"  rows="6" placeholder="Enter Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
@@ -272,6 +275,41 @@
                 $(this).text("Show More")
             }
         });
+
+
+        //Make icon show on input (For name field)
+        $("#okIconName").hide(); //first hide the icon
+        $('#formName').on('input', function(){
+
+        var allowedName = $(this).val();
+        var acceptedChar = /^[a-zA-Z]+$/.test(allowedName);
+            if(acceptedChar){
+                $('#allowedLetters').text('');
+            } else {
+                $('#allowedLetters').text('Use letters from A - Z only!');
+                 
+                setTimeout(()=>{
+                    $('#allowedLetters').text('');
+                },2000)
+            }
+        //Icon For name field 
+        $("#okIconName").show();
+          if($('#formName').val() == ""){
+            $("#okIconName").hide();
+          }
+        })
+
+        //Icon For email field
+        $("#okIconEmail").hide();
+        $('#formEmail').on('input', function(){
+
+          $("#okIconEmail").show();
+
+          if($('#formEmail').val() == ""){
+            $("#okIconEmail").hide();
+          }
+        })
+
     });
 
     
