@@ -396,20 +396,61 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-.contact-right form{
-    width: 100%;
-}
+
+/* Contact right side */
+/* ************  MORE INPUT FIELD STYLING  ************ */
 form input, form textarea{
     width: 100%;
-    border: none;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	background: transparent;
+	border: 2px solid #262626;
+	padding: 0 10px;
+	outline: none;
 }
+.input-group{
+	position: relative;
+	margin: 20px 0;
+}
+.input-type label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	font-size: 14px;
+	color: #fff;
+	padding: 0 5px;
+	pointer-events: none;
+	/* Add transition property to make the placeholder move up smoothly	*/
+	transition: .5s;
+}
+.input-textarea label{
+    position: absolute;
+	top: 25%;
+	left: 5px;
+	transform: translateY(-60%);
+	font-size: 14px;
+	color: #fff;
+    padding: 0 5px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+input:focus, input:valid, textarea:focus, textarea:valid {
+/*	color: green;*/
+	border: 2px solid rgb(3, 66, 3);
+}
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+	top: 0;
+	font-size: 18px;
+	background: #0f0101;
+	color: rgb(3, 94, 3);
+} 
+/* *****************END HERE******************************* */
 
 form .btn2{
     padding: 14px 60px;
@@ -586,14 +627,18 @@ a span .double-arrow:hover{
 /* form OK check mark */
 .formName{
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 15px;
     color: green;
 }
 .formEmail{
     position: absolute;
-    top: 120px;
+    top: 20px;
     right: 15px;
     color: green;
 }
-  
+/* To make the button have a click effect */
+.btnclick:active {
+    transform: translateY(2px) ;
+}
+
