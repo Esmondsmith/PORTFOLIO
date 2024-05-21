@@ -616,18 +616,10 @@ nav .fas-menu{
     display: block;
     font-size: 20px;
 }
-
-/* Back to top */
 .to-top{
-    position: static;
-    top: 500px;
-    border: 1ps solid white;
-    background-color: aliceblue;
-    color: #ff004f;
     padding: 8px;
-    border-radius: 80%;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 /*  */
 a span .double-arrow:hover{
