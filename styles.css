@@ -681,8 +681,9 @@ a span .double-arrow:hover{
     .whatsApp{
         margin-left: 5px;
         border: 2px solid rgb(120, 177, 145);
-        /* padding: 15px 15px; */
+        padding: 14px;
         border-radius: 6px;
         text-align: center;
+        font-size: 16px;
     }
 }
