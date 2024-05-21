@@ -652,14 +652,13 @@ button {
 
 .cont2bb {
 	width: 300px;
-	height: 350px;
+	height: 380px;
 	margin: 0px 0px 0px 80px;
 	background-color: #F5F5F5;
 	padding-top:20px;
 }
 
 .start {
-
 	background-color: #CC596E;
 	height: 20px;
 	padding: 10px;
@@ -686,13 +685,13 @@ input {
 .select {
 	padding: 10px;
 	width: 220px;
-	margin-left: 40px;
+	margin-left: 32px;
 	margin-bottom: 0px;
 }
 	
 #reg {
-	margin-bottom:8px;
-	margin-left: 40px;
+	margin-bottom:10px;
+	text-align: center;
 	font-family: arial;
 	font-weight: bold;
 }
@@ -704,15 +703,13 @@ h3 {
 	margin: 0px;
 }
 
-
 .cont3 {
 	width:100%;
 	min-height: 100px;
 	text-align:center;
 	margin-top: 50px;
 }
-
-.cont4 {
+.contact-map {
 	width:50%;
 	min-height: 100px;
     position: relative;
