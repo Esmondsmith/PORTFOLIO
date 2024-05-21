@@ -658,7 +658,7 @@ a span .double-arrow:hover{
     transform: translateY(2px) ;
 }
 
-.WhatsApp{
+.whatsApp{
     text-decoration: none;
     color: rgb(120, 177, 145);
     margin-left: 20px;
@@ -673,12 +673,12 @@ a span .double-arrow:hover{
 .fa-whatsapp:hover{
     color: rgb(32, 133, 76);
 }
-.WhatsApp:hover{
+.whatsApp:hover{
     background-color: white;
     color: rgb(32, 133, 76);
 }
 @media only screen and (max-width: 568px){
-    .WhatsApp{
+    .whatsApp{
         margin-left: 5px;
         border: 2px solid rgb(120, 177, 145);
         /* padding: 15px 15px; */
