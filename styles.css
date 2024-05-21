@@ -680,7 +680,6 @@ a span .double-arrow:hover{
 }
 @media only screen and (max-width: 568px){
     .WhatsApp{
-        display: block;
         margin-left: 5px;
         border: 2px solid rgb(120, 177, 145);
         padding: 15px 10px;
