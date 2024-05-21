@@ -356,6 +356,9 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+.btn:active{
+    transform: scale(0.98);
+}
 
 @media only screen and (max-width: 400px){
     #portfolio{
@@ -407,7 +410,9 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #ff004f;
 }
-
+.btn2:active{
+    transform: scale(0.98);
+}
 
 /* Contact right side */
 /* ************  MORE INPUT FIELD STYLING  ************ */
@@ -654,3 +659,22 @@ a span .double-arrow:hover{
     transform: translateY(2px) ;
 }
 
+.WhatsApp{
+    text-decoration: none;
+    color: rgb(120, 177, 145);
+    margin-left: 20px;
+    border: 2px solid rgb(120, 177, 145);
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.fa-whatsapp{
+    color: rgb(120, 177, 145);
+}
+.fa-whatsapp:hover{
+    color: rgb(32, 133, 76);
+}
+.WhatsApp:hover{
+    background-color: white;
+    color: rgb(32, 133, 76);
+}
