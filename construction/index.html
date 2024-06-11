@@ -6,6 +6,7 @@
 		<meta name="description" content="Constructions equipments, Heavy machines">
 		<meta>
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 		
 	</head>
 
@@ -18,7 +19,15 @@
 					<a href="#"><img src="icons/logo.png" alt="logo image" height="100px" width="150px"></a>
 				</div>
 				<div class="nav-link">
-					<ul class="nav-items">
+					<ul class="nav-items visible-nav-items">
+						<li class="hide-on-mobile"><a href="#">Home</a></li>
+						<li class="hide-on-mobile"><a href="About.html">About Us</a></li>
+						<li class="hide-on-mobile"><a href="Service.html">Services</a></li>
+						<li class="hide-on-mobile"><a href="Contact.html">Contact</a></li>
+						<li onclick="showbar()"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+					</ul>
+					<ul class="nav-items sidebar">
+						<li onclick="hidebar()"><a href="#"><i class="fa-solid fa-xmark fa-lg"></i></a></li>
 						<li><a href="#">Home</a></li>
 						<li><a href="About.html">About Us</a></li>
 						<li><a href="Service.html">Services</a></li>
@@ -178,8 +187,22 @@
 			
 		</div>
 	
+
+
+		<script>
+			function showbar(){
+				const sidebar = document.querySelector(".sidebar");
+				sidebar.style.display = "flex";
+			}
+
+			function hidebar(){
+				const sidebar = document.querySelector(".sidebar");
+				sidebar.style.display = "none";
+			}
+
+
+		</script>
+
+
 	</body>
-	
-	
-	
 </html>
